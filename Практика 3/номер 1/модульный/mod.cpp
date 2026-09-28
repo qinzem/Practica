@@ -1,15 +1,20 @@
- Модульный
- #include <iostream>
- #include <cmath>
- using namespace std;
+#include <iostream>
+#include <cmath>
+using namespace std;
 
- int main() {
+double gipo(int a, int b) {
+    double c;
+    c = sqrt(a * a + b * b);
+    return c;
+}
+
+int main() {
     int a, b;
     cin >> a;
     cin >> b;
-    double v = pow(a, 2); 
-    double q = pow(b, 2);
-    double c = sqrt(v + q); 
+    
+    double c = gipo(a, b);
+    
     cout << "Гипотенуза = " << c;
     return 0;
- }
+}
