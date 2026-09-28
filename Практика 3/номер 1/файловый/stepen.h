@@ -1,0 +1,1 @@
+double stepen(double x);
